@@ -20,6 +20,10 @@ public class Game
 
         while (again == 1)
         {
+            if (chips == 0)
+            {
+                end();
+            }
             while (chips > 0) {
 
                 do {
@@ -53,6 +57,12 @@ public class Game
             }
         }
         System.out.println("Thanks for playing! =)");
+    }
+
+    public void end(){
+        System.out.println("You have no more chips =(");
+        System.out.println("Thanks for playing! =)");
+        System.exit(1);
     }
 
     public void makeHand()
@@ -157,7 +167,7 @@ public class Game
         {
             System.out.println("You have a pair!");
             chips = chips - bet;
-            chips = chips + (bet * 2);
+            chips = chips + (bet * 1);
             System.out.println("You currently have " + chips + "chips.");
 
         }
