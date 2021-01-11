@@ -166,7 +166,7 @@ public class Game
             int highCard = this.highCard();
             System.out.println("You lost this round...");
             chips = chips - bet;
-            System.out.println("You currently have " + chips + "chips.");
+            System.out.println("You currently have " + chips + " chips.");
         }
     }
 
